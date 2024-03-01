@@ -237,6 +237,9 @@ EditorBuildSettings:
     path: Assets/proyecto/Escenas/Nivel1.unity
     guid: 070cb93ded3f8af4c8c56faac4c119c5
   - enabled: 1
+    path: Assets/proyecto/Escenas/Nivel2.unity
+    guid: c228fbcb4b713974f9124c43d36a679a
+  - enabled: 1
     path: Assets/proyecto/Escenas/Perdio.unity
     guid: f837029075e255d4f9362c34074dfebb
   - enabled: 1

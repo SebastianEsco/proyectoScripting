@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MoreMountains.CorgiEngine;
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class Fades : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Fades : MonoBehaviour
     [MMInspectorButton("FadeIn")] public bool FadeInButton;
     [MMInspectorButton("FadeOut")] public bool FadeOutButton;
     public Color colorInicial;
+    bool reproduciendoFadeIn;
     
 
     private void Start()
@@ -24,7 +26,6 @@ public class Fades : MonoBehaviour
     public void FadeIn()
     {
         StartCoroutine(FadeInCoroutine());
-        Invoke("FadeOut", 3f);
     }
 
     public void FadeOut()
@@ -34,35 +35,47 @@ public class Fades : MonoBehaviour
     public IEnumerator FadeInCoroutine()
     {
         Color c = sr.color;
-        Debug.Log("Ejecutando el Fade In");
-        for (float i = 0; i < 1.1f; i += 0.1f)
+        reproduciendoFadeIn = true;
+        if(c.a != 1)
         {
-            
-            c.a = i;
-            sr.color = c;
-            yield return new WaitForSeconds(0.1f);
+            for (float i = c.a; i < 1.1f; i += 0.1f)
+            {
+                c.a = i;
+                sr.color = c;
+                yield return new WaitForSeconds(0.1f);
 
+            }
         }
+        reproduciendoFadeIn = false;
+        
     }
 
     public IEnumerator FadeOutCoroutine()
     {
         Color c = sr.color;
-        Debug.Log("Ejecutando el Fade out");
-        for (float i = 1; i > -0.1f; i -= 0.1f)
+
+        for (float i = c.a; i > -0.1f; i -= 0.1f)
         {
-            
+
             c.a = i;
-            Debug.Log(c.a);
             sr.color = c;
+            if (reproduciendoFadeIn)
+            {
+                break;
+            }
 
             yield return new WaitForSeconds(0.1f);
         }
+
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerStay2D(Collider2D collision)
     {
         FadeIn();
+    }
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        Invoke("FadeOut", 2f);
     }
 
 

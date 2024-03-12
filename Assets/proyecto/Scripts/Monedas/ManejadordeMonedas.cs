@@ -8,14 +8,10 @@ public class ManejadordeMonedas : MonoBehaviour, MMEventListener<PickableItemEve
 {
 
     private int monedasRecolectadas;
-    [SerializeField] private GameObject puerta;
 
     public void Start()
     {
-        if (puerta != null)
-        {
-            puerta.SetActive(false);
-        }
+
     }
     void OnEnable()
     {
@@ -32,17 +28,7 @@ public class ManejadordeMonedas : MonoBehaviour, MMEventListener<PickableItemEve
         Debug.Log(e.PickedItem.name);
 
         monedasRecolectadas++;
-
-        if(monedasRecolectadas == 4 && puerta != null)
-        {
-            //Debug.Log("Puerta Abiertaa");
-            
-
-        }
-        if(e.PickedItem.name == "llave")
-        {
-            puerta.SetActive(true);
-        }
+        
 
     }
 }

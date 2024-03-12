@@ -8,6 +8,7 @@ TagManager:
   - Music
   - Background
   - NoMask
+  - Llave
   layers:
   - Default
   - TransparentFX

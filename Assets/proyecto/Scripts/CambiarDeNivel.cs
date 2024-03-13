@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class CambiarDeNivel : MonoBehaviour
 {
+    [SerializeField] string nivelACargar;
     public void OnCambiarDeNivel()
     {
-        MMSceneLoadingManager.LoadScene("Nivel2");
+        MMSceneLoadingManager.LoadScene(nivelACargar);
         //.
         //Debug.Log("Cambiar de nivel");
     }

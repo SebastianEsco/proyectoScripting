@@ -4,22 +4,27 @@ using System.Collections.Generic;
 using MoreMountains.CorgiEngine;
 using UnityEngine;
 using Unity.VisualScripting;
+using TMPro;
 
 public class Fades : MonoBehaviour
 {
-
+    [SerializeField] TextMeshPro text;
+    
     SpriteRenderer sr;
     [MMInspectorButton("FadeIn")] public bool FadeInButton;
     [MMInspectorButton("FadeOut")] public bool FadeOutButton;
-    public Color colorInicial;
+    public Color colorInicialCuadro, colorInicialTexto;
     bool reproduciendoFadeIn;
+    
     
 
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         
-        sr.color = colorInicial;
+        sr.color = colorInicialCuadro;
+        text.color = colorInicialTexto;
+        
 
     }
 
@@ -35,12 +40,15 @@ public class Fades : MonoBehaviour
     public IEnumerator FadeInCoroutine()
     {
         Color c = sr.color;
+        Color ctext = text.color;
         reproduciendoFadeIn = true;
         if(c.a != 1)
         {
             for (float i = c.a; i < 1.1f; i += 0.1f)
             {
                 c.a = i;
+                ctext.a = i;
+                text.color = ctext;
                 sr.color = c;
                 yield return new WaitForSeconds(0.1f);
 
@@ -53,12 +61,15 @@ public class Fades : MonoBehaviour
     public IEnumerator FadeOutCoroutine()
     {
         Color c = sr.color;
+        Color ctext = text.color;
 
         for (float i = c.a; i > -0.1f; i -= 0.1f)
         {
 
             c.a = i;
             sr.color = c;
+            ctext.a = i;
+            text.color = ctext;
             if (reproduciendoFadeIn)
             {
                 break;

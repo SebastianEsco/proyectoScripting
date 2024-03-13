@@ -824,6 +824,31 @@ PrefabInstance:
       propertyPath: m_text
       value: Usa W para saltar
       objectReference: {fileID: 0}
+    - target: {fileID: 4996211210606004435, guid: ffe84a782fca0f344b38c3327654d6be,
+        type: 3}
+      propertyPath: colorInicialTexto.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996211210606004435, guid: ffe84a782fca0f344b38c3327654d6be,
+        type: 3}
+      propertyPath: colorInicialCuadro.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996211210606004435, guid: ffe84a782fca0f344b38c3327654d6be,
+        type: 3}
+      propertyPath: colorInicialCuadro.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996211210606004435, guid: ffe84a782fca0f344b38c3327654d6be,
+        type: 3}
+      propertyPath: colorInicialCuadro.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996211210606004435, guid: ffe84a782fca0f344b38c3327654d6be,
+        type: 3}
+      propertyPath: colorInicialCuadro.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6125502627902302398, guid: ffe84a782fca0f344b38c3327654d6be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -882,7 +907,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4022254897903043823, guid: ffe84a782fca0f344b38c3327654d6be,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ffe84a782fca0f344b38c3327654d6be, type: 3}
 --- !u!1001 &66801877
 PrefabInstance:

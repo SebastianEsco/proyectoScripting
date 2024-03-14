@@ -819,6 +819,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1491484537940207438, guid: ffe84a782fca0f344b38c3327654d6be,
+        type: 3}
+      propertyPath: m_text
+      value: W Para saltar
+      objectReference: {fileID: 0}
     - target: {fileID: 4983096904214510199, guid: ffe84a782fca0f344b38c3327654d6be,
         type: 3}
       propertyPath: m_text

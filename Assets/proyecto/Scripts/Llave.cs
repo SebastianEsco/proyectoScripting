@@ -19,7 +19,7 @@ public class Llave : MonoBehaviour, MMEventListener<PickableItemEvent>
         }
         else
         {
-            Debug.Log("Puerta no encontrada");
+            //Debug.Log("Puerta no encontrada");
         }
     }
     void OnEnable()

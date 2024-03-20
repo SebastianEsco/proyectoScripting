@@ -6,7 +6,14 @@ Por Sebastián Escobar, Miguel Muñoz y Andres Juan
 
 
 ---------------------
+# Instrucciones:
 
+- Versión de unity: 2022.3.9f
+- Proyecto creado usando Corgi Engine:
+Al ingresar, se debe ingresar a la carpeta **Proyecto**, todo lo otro es parte de Corgi Engine y para usarse debe ser copiado y pegado.
+
+
+----------------------
 # Cambios entrega 1 a entrega 2:
 - Patalla de perdió funcional.
 - Uso de corutinas para mensajes a lo largo del juego.

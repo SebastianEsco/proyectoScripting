@@ -9,7 +9,14 @@ public class CambiarDeNivel : MonoBehaviour
     public void OnCambiarDeNivel()
     {
         MMSceneLoadingManager.LoadScene(nivelACargar);
-        //.
-        //Debug.Log("Cambiar de nivel");
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            OnCambiarDeNivel();
+        }
+        
     }
 }

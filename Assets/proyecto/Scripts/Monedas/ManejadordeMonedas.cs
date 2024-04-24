@@ -25,9 +25,14 @@ public class ManejadordeMonedas : MonoBehaviour, MMEventListener<PickableItemEve
 
     public virtual void OnMMEvent(PickableItemEvent e)
     {
-        Debug.Log(e.PickedItem.name);
-
+        
+        
         monedasRecolectadas++;
+        Debug.Log(monedasRecolectadas);
+        if (monedasRecolectadas >= 50)
+        {
+            MMAchievementManager.UnlockAchievement("Recolectador");
+        }
         
 
     }

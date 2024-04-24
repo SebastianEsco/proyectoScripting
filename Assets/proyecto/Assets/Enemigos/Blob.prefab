@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 3443359665241295424}
   m_Layer: 13
   m_Name: Blob
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

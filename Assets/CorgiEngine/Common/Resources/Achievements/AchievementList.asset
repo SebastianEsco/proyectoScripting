@@ -38,3 +38,15 @@ MonoBehaviour:
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0
+  - AchievementID: SaltoDeFe
+    AchievementType: 0
+    HiddenAchievement: 0
+    UnlockedStatus: 0
+    Title: "Salto de F\xE9"
+    Description: Llega al nivel 3
+    Points: 100
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedSound: {fileID: 0}
+    ProgressTarget: 0
+    ProgressCurrent: 0

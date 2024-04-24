@@ -15,6 +15,7 @@ public class CambiarDeNivel : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            
             OnCambiarDeNivel();
         }
         

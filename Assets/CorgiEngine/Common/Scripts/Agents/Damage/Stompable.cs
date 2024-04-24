@@ -175,6 +175,7 @@ namespace MoreMountains.CorgiEngine
 			}
 			else
 			{
+				
 				_verticalRayCastStart = _controller.BoundsTopLeftCorner + this.transform.up * RaycastVerticalOffset;
 				_verticalRayCastEnd = _controller.BoundsTopRightCorner + this.transform.up * RaycastVerticalOffset;
 			}

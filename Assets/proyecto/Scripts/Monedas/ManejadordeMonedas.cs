@@ -37,7 +37,15 @@ public class ManejadordeMonedas : MonoBehaviour, MMEventListener<PickableItemEve
         {
             MMAchievementManager.UnlockAchievement("TodasLasMonedasNivel1");
         }
-        
+        if (monedasRecolectadas >= 200)
+        {
+            MMAchievementManager.UnlockAchievement("Recolectador2");
+        }
+        if (monedasRecolectadas >= 500)
+        {
+            MMAchievementManager.UnlockAchievement("Recolectador3");
+        }
+
 
     }
 }

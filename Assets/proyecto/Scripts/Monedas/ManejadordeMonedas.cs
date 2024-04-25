@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ManejadordeMonedas : MonoBehaviour, MMEventListener<PickableItemEvent>
 {
-
+    [SerializeField] string nivel;
     private int monedasRecolectadas;
 
     public void Start()
@@ -32,6 +32,10 @@ public class ManejadordeMonedas : MonoBehaviour, MMEventListener<PickableItemEve
         if (monedasRecolectadas >= 50)
         {
             MMAchievementManager.UnlockAchievement("Recolectador");
+        }
+        if(monedasRecolectadas == 236 && nivel == "1")
+        {
+            MMAchievementManager.UnlockAchievement("TodasLasMonedasNivel1");
         }
         
 

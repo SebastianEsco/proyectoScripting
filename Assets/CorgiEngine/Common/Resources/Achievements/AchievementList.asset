@@ -50,3 +50,27 @@ MonoBehaviour:
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0
+  - AchievementID: TodasLasMonedasNivel1
+    AchievementType: 0
+    HiddenAchievement: 0
+    UnlockedStatus: 0
+    Title: Ni un centavo de caridad I
+    Description: Recoge todas las monedas del nivel 1
+    Points: 500
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedSound: {fileID: 0}
+    ProgressTarget: 0
+    ProgressCurrent: 0
+  - AchievementID: "Peque\xF1oDesliz"
+    AchievementType: 0
+    HiddenAchievement: 0
+    UnlockedStatus: 0
+    Title: "Peque\xF1o Desliz"
+    Description: Muere por primera vez
+    Points: 500
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedSound: {fileID: 0}
+    ProgressTarget: 0
+    ProgressCurrent: 0

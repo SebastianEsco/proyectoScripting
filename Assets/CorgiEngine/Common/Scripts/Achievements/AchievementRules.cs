@@ -49,7 +49,7 @@ namespace MoreMountains.CorgiEngine
 					MMAchievementManager.UnlockAchievement ("PrincessInAnotherCastle");
 					break;
 				case CorgiEngineEventTypes.PlayerDeath:
-					MMAchievementManager.UnlockAchievement ("DeathIsOnlyTheBeginning");
+					MMAchievementManager.UnlockAchievement ("PequeñoDesliz");
 					break;
 			}
 		}

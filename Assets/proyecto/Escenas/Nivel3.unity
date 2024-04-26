@@ -7652,7 +7652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1237592678}
   m_Layer: 0
-  m_Name: PlatformasExtraNormal
+  m_Name: PlataformasExtraNormal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

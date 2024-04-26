@@ -7,7 +7,7 @@ using UnityEngine;
 public class ManejadordeMonedas : MonoBehaviour, MMEventListener<PickableItemEvent>
 {
     [SerializeField] string nivel;
-    private int monedasRecolectadas;
+    public int monedasRecolectadas;
 
     public void Start()
     {
@@ -28,6 +28,13 @@ public class ManejadordeMonedas : MonoBehaviour, MMEventListener<PickableItemEve
         
         
         monedasRecolectadas++;
+
+        
+
+
+        MMAchievementManager.AddProgress("Recolectador", 1);
+        MMAchievementManager.AddProgress("Recolectador2", 1);
+        MMAchievementManager.AddProgress("Recolectador3", 1);
         Debug.Log(monedasRecolectadas);
         if (monedasRecolectadas >= 50)
         {
@@ -37,7 +44,15 @@ public class ManejadordeMonedas : MonoBehaviour, MMEventListener<PickableItemEve
         {
             MMAchievementManager.UnlockAchievement("TodasLasMonedasNivel1");
         }
-        if (monedasRecolectadas >= 200)
+        if (monedasRecolectadas == 180 && nivel == "2")
+        {
+            MMAchievementManager.UnlockAchievement("TodasLasMonedasNivel2");
+        }
+        if (monedasRecolectadas == 98 && nivel == "3")
+        {
+            MMAchievementManager.UnlockAchievement("TodasLasMonedasNivel3");
+        }
+        if (monedasRecolectadas >= 250)
         {
             MMAchievementManager.UnlockAchievement("Recolectador2");
         }

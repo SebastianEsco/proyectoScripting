@@ -82,11 +82,19 @@ public class Fades : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        FadeIn();
+        if (collision.CompareTag("Player"))
+        {
+            FadeIn();
+        }
+        
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        Invoke("FadeOut", 2f);
+        if (collision.CompareTag("Player"))
+        {
+            Invoke("FadeOut", 2f);
+        }
+        
     }
 
 

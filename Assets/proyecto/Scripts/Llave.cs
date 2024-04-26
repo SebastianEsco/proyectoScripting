@@ -10,9 +10,11 @@ public class Llave : MonoBehaviour, MMEventListener<PickableItemEvent>
     [SerializeField] private GameObject puerta;
     private int contador;
     [SerializeField] private int meta;
+    ManejadordeMonedas manejador;
 
     public void Start()
     {
+        manejador = GameObject.Find("Coin").GetComponent<ManejadordeMonedas>();
         if (puerta != null)
         {
             puerta.SetActive(false);
@@ -42,6 +44,12 @@ public class Llave : MonoBehaviour, MMEventListener<PickableItemEvent>
         if (contador == meta)
         {
             puerta.SetActive(true);
+            if(manejador.monedasRecolectadas < 10)
+            {
+                MMAchievementManager.UnlockAchievement("NoMonedas");
+            }
+            
+
         }
 
 

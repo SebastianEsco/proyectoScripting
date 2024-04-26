@@ -246,6 +246,9 @@ EditorBuildSettings:
     path: Assets/proyecto/Escenas/Perdio.unity
     guid: f837029075e255d4f9362c34074dfebb
   - enabled: 1
+    path: Assets/proyecto/Escenas/Logros.unity
+    guid: bbf20c48c1433d34cb4bcf8c52569e36
+  - enabled: 1
     path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/LoadingScreen.unity
     guid: 888394d52616e5e42b3b54c3f2bbd3eb
   m_configObjects: {}

@@ -8,9 +8,14 @@ public class IniciarDificultad : MonoBehaviour
     [SerializeField] int dificultadAPoner;
     void Start()
     {
-        selector = GameObject.Find("SelectorDeDificultad").GetComponent<SelectorDeDificultad>();
+        if (GameObject.Find("SelectorDeDificultad"))
+        {
+            selector = GameObject.Find("SelectorDeDificultad").GetComponent<SelectorDeDificultad>();
+            selector.SettearDificultad();
 
-        selector.SettearDificultad();
+        }
+
+        
         
     }
 

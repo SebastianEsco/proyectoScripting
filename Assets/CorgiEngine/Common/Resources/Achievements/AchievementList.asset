@@ -21,8 +21,8 @@ MonoBehaviour:
     Title: Recolectador! I
     Description: Consigue 50 monedas
     Points: 25
-    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    LockedImage: {fileID: 21300000, guid: 24e310246992a5d44a5dce5d236aec63, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: 24e310246992a5d44a5dce5d236aec63, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0
@@ -117,8 +117,8 @@ MonoBehaviour:
     Title: Recolectador! II
     Description: Consigue 200 monedas
     Points: 500
-    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    LockedImage: {fileID: 21300000, guid: 6b8fd67d11dccaa48b3fc1bce56c88f7, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: 6b8fd67d11dccaa48b3fc1bce56c88f7, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0
@@ -129,8 +129,8 @@ MonoBehaviour:
     Title: Recolectador! III
     Description: Consigue 500 monedas
     Points: 1000
-    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    LockedImage: {fileID: 21300000, guid: 3fbf1449dfff93d40bebb9c737f5b5aa, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: 3fbf1449dfff93d40bebb9c737f5b5aa, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0

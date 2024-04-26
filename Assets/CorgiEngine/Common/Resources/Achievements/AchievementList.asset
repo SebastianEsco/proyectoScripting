@@ -15,7 +15,7 @@ MonoBehaviour:
   AchievementsListID: AchievementsList
   Achievements:
   - AchievementID: Recolectador
-    AchievementType: 0
+    AchievementType: 1
     HiddenAchievement: 0
     UnlockedStatus: 0
     Title: Recolectador! I
@@ -24,19 +24,7 @@ MonoBehaviour:
     LockedImage: {fileID: 21300000, guid: 24e310246992a5d44a5dce5d236aec63, type: 3}
     UnlockedImage: {fileID: 21300000, guid: 24e310246992a5d44a5dce5d236aec63, type: 3}
     UnlockedSound: {fileID: 0}
-    ProgressTarget: 0
-    ProgressCurrent: 0
-  - AchievementID: DobleKill
-    AchievementType: 0
-    HiddenAchievement: 0
-    UnlockedStatus: 0
-    Title: Doble Kill
-    Description: Tas todo loco
-    Points: 100
-    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedSound: {fileID: 0}
-    ProgressTarget: 0
+    ProgressTarget: 50
     ProgressCurrent: 0
   - AchievementID: SaltoDeFe
     AchievementType: 0
@@ -46,7 +34,7 @@ MonoBehaviour:
     Description: Llega al nivel 3
     Points: 100
     LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: 0d628864e397a7a46bbb8f4961b056e8, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0
@@ -111,26 +99,50 @@ MonoBehaviour:
     ProgressTarget: 0
     ProgressCurrent: 0
   - AchievementID: Recolectador2
-    AchievementType: 0
+    AchievementType: 1
     HiddenAchievement: 0
     UnlockedStatus: 0
     Title: Recolectador! II
     Description: Consigue 200 monedas
     Points: 500
-    LockedImage: {fileID: 21300000, guid: 6b8fd67d11dccaa48b3fc1bce56c88f7, type: 3}
-    UnlockedImage: {fileID: 21300000, guid: 6b8fd67d11dccaa48b3fc1bce56c88f7, type: 3}
+    LockedImage: {fileID: 21300000, guid: daa79bc605e2ba444a171e9af5089c09, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: daa79bc605e2ba444a171e9af5089c09, type: 3}
     UnlockedSound: {fileID: 0}
-    ProgressTarget: 0
+    ProgressTarget: 250
     ProgressCurrent: 0
   - AchievementID: Recolectador3
-    AchievementType: 0
+    AchievementType: 1
     HiddenAchievement: 0
     UnlockedStatus: 0
     Title: Recolectador! III
     Description: Consigue 500 monedas
     Points: 1000
     LockedImage: {fileID: 21300000, guid: 3fbf1449dfff93d40bebb9c737f5b5aa, type: 3}
-    UnlockedImage: {fileID: 21300000, guid: 3fbf1449dfff93d40bebb9c737f5b5aa, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: aa50268e75364bc408b9ba39f117bc6e, type: 3}
     UnlockedSound: {fileID: 0}
-    ProgressTarget: 0
+    ProgressTarget: 500
+    ProgressCurrent: 0
+  - AchievementID: NoMonedas
+    AchievementType: 0
+    HiddenAchievement: 0
+    UnlockedStatus: 0
+    Title: Monedas???
+    Description: Consigue la llave cogiendo menos de 10 monedas
+    Points: 1000
+    LockedImage: {fileID: 21300000, guid: 3fbf1449dfff93d40bebb9c737f5b5aa, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: fd7b664f9bdb53d46aba02fbc7311c3a, type: 3}
+    UnlockedSound: {fileID: 0}
+    ProgressTarget: 500
+    ProgressCurrent: 0
+  - AchievementID: Muerto
+    AchievementType: 0
+    HiddenAchievement: 0
+    UnlockedStatus: 0
+    Title: "\xBFEsto es el cielo?"
+    Description: Pierde por primera vez
+    Points: 100
+    LockedImage: {fileID: 21300000, guid: 3fbf1449dfff93d40bebb9c737f5b5aa, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: fd7b664f9bdb53d46aba02fbc7311c3a, type: 3}
+    UnlockedSound: {fileID: 0}
+    ProgressTarget: 500
     ProgressCurrent: 0

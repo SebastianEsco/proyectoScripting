@@ -5936,6 +5936,14 @@ PrefabInstance:
       propertyPath: ButtonActivatedRequirement
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 21260900, guid: a8fd947d567e06f43b94ef059b6d37ca, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 21260900, guid: a8fd947d567e06f43b94ef059b6d37ca, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1795597123
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21172,6 +21180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 
+  monedasRecolectadas: 0
 --- !u!4 &1812747530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: fb91054f77e2a1f4ca2283f83904f34e,
@@ -24090,6 +24099,14 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 1768956839}
+    - target: {fileID: 21287676, guid: 65bbd310487b2d84292e5ae82ce056dd, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 21287676, guid: 65bbd310487b2d84292e5ae82ce056dd, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1795597123
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

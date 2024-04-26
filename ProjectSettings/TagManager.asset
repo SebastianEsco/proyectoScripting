@@ -40,7 +40,7 @@ TagManager:
   - MidHeightOneWayPlatforms
   - Pushables
   - Stairs
-  - 
+  - SoloConPlayer
   - 
   - 
   m_SortingLayers:

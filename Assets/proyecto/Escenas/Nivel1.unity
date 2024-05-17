@@ -2538,32 +2538,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb91054f77e2a1f4ca2283f83904f34e, type: 3}
---- !u!1 &177827430 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: ace2d4bf56f98df4196ff81845a465d7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1674947919}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &177827431 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 22400000, guid: ace2d4bf56f98df4196ff81845a465d7,
     type: 3}
   m_PrefabInstance: {fileID: 1674947919}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &177827432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177827430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68b641169e9490642991655e47572243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  temporizador: {fileID: 954442725}
-  tiempo: 120
 --- !u!4 &178576401 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: fb91054f77e2a1f4ca2283f83904f34e,
@@ -13655,13 +13635,14 @@ GameObject:
   - component: {fileID: 954442724}
   - component: {fileID: 954442726}
   - component: {fileID: 954442725}
+  - component: {fileID: 954442727}
   m_Layer: 5
   m_Name: Temporizador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &954442724
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13778,6 +13759,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954442723}
   m_CullTransparentMesh: 1
+--- !u!114 &954442727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954442723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b641169e9490642991655e47572243, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temporizador: {fileID: 954442725}
+  tiempo: 120
 --- !u!4 &958927134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: fb91054f77e2a1f4ca2283f83904f34e,
@@ -22437,11 +22432,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 954442724}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: ace2d4bf56f98df4196ff81845a465d7,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 177827432}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
 --- !u!1001 &1676107225
 PrefabInstance:

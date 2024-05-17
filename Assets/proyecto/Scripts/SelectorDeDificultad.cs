@@ -24,9 +24,9 @@ public class SelectorDeDificultad : MonoBehaviour
             {
                 GameObject.Find("PlataformasExtraFacil").SetActive(false);
             }
-            if (dificultad == 3) //DIFICULTAD NORMAL
+            if (dificultad == 3) //DIFICULTAD DIFICIL
             {
-                GameObject.Find("PlataformasExtraFacil").SetActive(false);
+                GameObject.Find("UICamera/Canvas/Temporizador").SetActive(true);
 
             }
         }

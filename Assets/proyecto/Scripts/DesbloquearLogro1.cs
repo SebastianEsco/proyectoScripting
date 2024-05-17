@@ -7,7 +7,7 @@ public class DesbloquearLogro1 : MonoBehaviour
 {
     [SerializeField] string nombreDeLogro;
     [SerializeField] GameObject logroDesbloqueado;
-    void Start()
+    void Update()
     {
         foreach(var achievement in MMAchievementManager.AchievementsList)
         {

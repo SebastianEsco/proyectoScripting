@@ -24,6 +24,11 @@ public class SelectorDeDificultad : MonoBehaviour
             {
                 GameObject.Find("PlataformasExtraFacil").SetActive(false);
             }
+            if (dificultad == 3) //DIFICULTAD NORMAL
+            {
+                GameObject.Find("PlataformasExtraFacil").SetActive(false);
+
+            }
         }
     }
 }

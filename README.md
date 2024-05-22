@@ -1,7 +1,7 @@
 ## **PROYECTO SCRIPTING**
 # Cañón Matacabras:
 
-Por Sebastián Escobar, Miguel Muñoz y Andres Juan
+Por Sebastián Escobar, Miguel Muñoz y Andrés Juan Giraldo
 ---------------------
 
 

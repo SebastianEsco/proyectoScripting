@@ -14,6 +14,7 @@ public class Buitre : MonoBehaviour
     {
         alturaInicial = transform.position.y;
         posicionInicial = transform.position.x;
+        direccionHorizontal = 1;
     }
 
     private void Update()
@@ -21,11 +22,17 @@ public class Buitre : MonoBehaviour
         if(!persiguiendoJugador)
         {
             //Patrullar
-
+            Debug.Log("gola");
             transform.Translate(0, velocidadDePatrullaje * direccionHorizontal * Time.deltaTime , 0);
-            if(Mathf.Abs(transform.position.x - posicionInicial) > distanciaDePatrullaje)
+            print(Mathf.Abs(-transform.position.x + posicionInicial) + "VS " + posicionInicial + distanciaDePatrullaje);
+
+            if(-transform.position.x + posicionInicial > posicionInicial + distanciaDePatrullaje)
             {
-                direccionHorizontal *= -1;
+                direccionHorizontal = -1;
+            }
+            else
+            {
+                direccionHorizontal = 1;
             }
 
             if(alturaInicial != transform.position.y)
@@ -40,7 +47,7 @@ public class Buitre : MonoBehaviour
                         direccionVertical = 1;
                 }
 
-                transform.Translate(velocidadDeRecuperacion * direccionVertical * Time.deltaTime, 0, 0);
+                transform.Translate(Vector2.right * velocidadDeRecuperacion * direccionVertical * Time.deltaTime);
             }
         }
 

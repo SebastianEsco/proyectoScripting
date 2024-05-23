@@ -16,4 +16,4 @@ Al ingresar, se debe ingresar a la carpeta **Proyecto**, todo lo otro es parte d
 ----------------------
 # Cambios entrega 3 a entrega 4:
 - Dificultad difícil añadida
-- 
+- Añadidos sonidos y musica propia

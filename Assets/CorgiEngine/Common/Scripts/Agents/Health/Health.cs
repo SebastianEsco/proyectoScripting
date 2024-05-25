@@ -174,6 +174,8 @@ namespace MoreMountains.CorgiEngine
 		public float LastDamage { get; set; }
 		public Vector3 LastDamageDirection { get; set; }
 
+
+
 		// respawn
 		public delegate void OnHitDelegate();
 		public delegate void OnHitZeroDelegate();

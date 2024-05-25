@@ -36,6 +36,8 @@ GameObject:
   - component: {fileID: 114679018816720190}
   - component: {fileID: -4342895061800036961}
   - component: {fileID: 3111699425489420789}
+  - component: {fileID: 759053386997844094}
+  - component: {fileID: 3972177116544487755}
   m_Layer: 9
   m_Name: Rectangle
   m_TagString: Player
@@ -1019,6 +1021,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7ae9817fcf24e49815bdb519e1ece1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &759053386997844094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb569fb6c8b20b46af540b6e2caaa1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3972177116544487755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923a01d66c4618446abb082250646478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FacingDirection: 1
+  ForceAssignation: 0
+  CheckPointOrder: 0
+  CanBeReachedMoreThanOnce: 1
+  OnCheckpointReached:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &159142
 GameObject:
   m_ObjectHideFlags: 0

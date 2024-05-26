@@ -2059,6 +2059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1c8748acbfe1eb64d88a630bf10a9aa2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c8748acbfe1eb64d88a630bf10a9aa2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 99.58
@@ -2098,6 +2102,11 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 1c8748acbfe1eb64d88a630bf10a9aa2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61511298043397612, guid: 1c8748acbfe1eb64d88a630bf10a9aa2,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

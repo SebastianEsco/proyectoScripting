@@ -4,56 +4,105 @@ using UnityEngine;
 
 public class Buitre : MonoBehaviour
 {
-    int direccionVertical, direccionHorizontal;
-    bool persiguiendoJugador;
+    int direccionHorizontal;
     float alturaInicial, posicionInicial;
     public float velocidadDePatrullaje, distanciaDePatrullaje;
-    float velocidadDeRecuperacion = 2;
+    public float distanciaParaPerseguir;
+    bool cambioDireccion;
+    public GameObject target;
+    SpriteRenderer sr;
 
     private void Start()
     {
         alturaInicial = transform.position.y;
         posicionInicial = transform.position.x;
         direccionHorizontal = 1;
+        cambioDireccion = true;
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
-        if(!persiguiendoJugador)
+        
+
+        if(Patrullando())
         {
-            //Patrullar
-            Debug.Log("gola");
-            transform.Translate(0, velocidadDePatrullaje * direccionHorizontal * Time.deltaTime , 0);
-            print(Mathf.Abs(-transform.position.x + posicionInicial) + "VS " + posicionInicial + distanciaDePatrullaje);
-
-            if(-transform.position.x + posicionInicial > posicionInicial + distanciaDePatrullaje)
+            //recuperandose
+            if (transform.position.y - alturaInicial > 0.5f || transform.position.y - alturaInicial < -0.5f)
             {
-                direccionHorizontal = -1;
-            }
-            else
-            {
-                direccionHorizontal = 1;
-            }
-
-            if(alturaInicial != transform.position.y)
-            {
-                if(alturaInicial < transform.position.y)
+                Vector2 vectorPosicionInicial = new Vector2(posicionInicial, alturaInicial);
+                Vector2 destino = Vector2.MoveTowards(transform.position, vectorPosicionInicial, velocidadDePatrullaje * Time.deltaTime);
+                transform.position = destino;
+                if(destino.x > transform.position.x)
                 {
-                    //ir hacia abajo
-                    direccionVertical = -1;
+                    sr.flipX = false;
                 }
                 else
                 {
-                        direccionVertical = 1;
+                    sr.flipX = true;
                 }
+            }
+            else
+            {
+                //Patrullar
+                transform.Translate(Vector2.right * direccionHorizontal * velocidadDePatrullaje * Time.deltaTime);
 
-                transform.Translate(Vector2.right * velocidadDeRecuperacion * direccionVertical * Time.deltaTime);
+
+                if (posicionInicial + transform.position.x > posicionInicial + distanciaDePatrullaje)
+                {
+                    direccionHorizontal = -1;
+                    sr.flipX = true;
+                }
+                else if (posicionInicial + transform.position.x < posicionInicial - distanciaDePatrullaje)
+                {
+
+                    direccionHorizontal = 1;
+                    sr.flipX = false;
+                }
+            }
+            
+
+            
+            
+
+        }
+        else
+        {
+            if (transform.position.x > target.transform.position.x)
+            {
+                sr.flipX = true;
+            }
+            else
+            {
+                sr.flipX = false;
+            }
+            Vector2 nuevaPosicion = Vector2.MoveTowards(transform.position, target.transform.position, velocidadDePatrullaje * Time.deltaTime);
+            transform.position = nuevaPosicion;
+        }
+    }
+
+
+    public bool Patrullando()
+    {
+
+        target = GameObject.Find("Rectangle");
+        if(target != null)
+        {
+            if (Vector2.Distance(transform.position, target.transform.position) < distanciaParaPerseguir)
+            {
+
+                Debug.Log("A Distancia para perseguir");
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
-
-        if(persiguiendoJugador )
+        else
         {
-
+            return true;
         }
+        
     }
 }

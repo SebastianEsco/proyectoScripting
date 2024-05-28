@@ -226,25 +226,28 @@ EditorBuildSettings:
     guid: 1bf7e1ee0457c87459eb6313a2fdc4fb
   - enabled: 1
     path: Assets/proyecto/Escenas/Creditos.unity
-    guid: 885bbb9c083095149b1f9a9ba1d911bf
+    guid: 87a58415815d8fc4d9e5eece9b7853d4
   - enabled: 1
     path: Assets/proyecto/Escenas/Gano.unity
-    guid: 409b398259e9a4e43b7dfd558473bedf
+    guid: ad387ac1c160db047b7e301d83b8ba81
   - enabled: 1
     path: Assets/proyecto/Escenas/Instrucciones.unity
-    guid: 34f66ce8bd5ac71479ad65da183f80fa
+    guid: 248eb79c0e2d1f5439d7a3befe7e8daa
   - enabled: 1
     path: Assets/proyecto/Escenas/Nivel1.unity
     guid: 070cb93ded3f8af4c8c56faac4c119c5
   - enabled: 1
     path: Assets/proyecto/Escenas/Nivel2.unity
-    guid: c228fbcb4b713974f9124c43d36a679a
+    guid: 7e0377d539f6dd94db67a5a60b12a29c
   - enabled: 1
     path: Assets/proyecto/Escenas/Nivel3.unity
     guid: b9423f4fce7876f448e13d3788a9fec2
   - enabled: 1
     path: Assets/proyecto/Escenas/Perdio.unity
     guid: f837029075e255d4f9362c34074dfebb
+  - enabled: 1
+    path: Assets/proyecto/Escenas/NivelBoss.unity
+    guid: 8853a3711cd00e746b7b6103e3cc7a5a
   - enabled: 1
     path: Assets/proyecto/Escenas/Logros.unity
     guid: bbf20c48c1433d34cb4bcf8c52569e36

@@ -1,9 +1,12 @@
 @font-face{
     font-family: 'Weston';
-    src:url(/Assets/proyecto/Assets/Arte/Fuentes/Weston\ Free.otf);
+    src:url(/Assets/proyecto/Assets/Arte/Fuentes/WestonFree.otf);
     font-weight: bold;
     font-style: bold;
 }
 body{
     font-family: 'Weston';
+}
+.parrafosHistori{
+    padding: 60px 0;
 }

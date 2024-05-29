@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Weston';
-    src:url(/Assets/proyecto/Assets/Arte/Fuentes/WestonFree.otf);
+    src:url(Assets/proyecto/Assets/Arte/Fuentes/WestonFree.otf);
     font-weight: bold;
     font-style: bold;
 }
@@ -9,4 +9,15 @@ body{
 }
 .parrafosHistori{
     padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
 }
+.titulo{
+    color:goldenrod;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+

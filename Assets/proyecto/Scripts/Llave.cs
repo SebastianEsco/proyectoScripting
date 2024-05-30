@@ -14,7 +14,10 @@ public class Llave : MonoBehaviour, MMEventListener<PickableItemEvent>
 
     public void Start()
     {
-        manejador = GameObject.Find("Coin").GetComponent<ManejadordeMonedas>();
+        if (GameObject.Find("Coin"))
+        {
+            manejador = GameObject.Find("Coin").GetComponent<ManejadordeMonedas>();
+        }
         if (puerta != null)
         {
             puerta.SetActive(false);

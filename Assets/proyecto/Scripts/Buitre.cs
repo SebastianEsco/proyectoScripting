@@ -11,29 +11,52 @@ public class Buitre : MonoBehaviour
     bool cambioDireccion;
     public GameObject target;
     SpriteRenderer sr;
+    Vector2 vectorPosicionInicial;
 
+    private void Awake()
+    {
+        alturaInicial = transform.localPosition.y;
+        posicionInicial = transform.localPosition.x;
+    }
     private void Start()
     {
-        alturaInicial = transform.position.y;
-        posicionInicial = transform.position.x;
+        
         direccionHorizontal = 1;
         cambioDireccion = true;
         sr = GetComponent<SpriteRenderer>();
+        print("X: " + posicionInicial + "  ..... Y:  " + alturaInicial);
     }
 
     private void Update()
     {
-        
-
-        if(Patrullando())
+        target = GameObject.Find("Rectangle");
+        vectorPosicionInicial  = new Vector2(posicionInicial, alturaInicial);
+        if (Patrullando())
         {
-            //recuperandose
-            if (transform.position.y - alturaInicial > 0.5f || transform.position.y - alturaInicial < -0.5f)
+            //Patrullar
+            transform.Translate(Vector2.right * direccionHorizontal * velocidadDePatrullaje * Time.deltaTime);
+
+            if(distanciaDePatrullaje == 0)
             {
-                Vector2 vectorPosicionInicial = new Vector2(posicionInicial, alturaInicial);
+                direccionHorizontal = 0;
+            }
+            else if (vectorPosicionInicial.x + (-vectorPosicionInicial.x + transform.localPosition.x) > vectorPosicionInicial.x + distanciaDePatrullaje)
+            {
+                direccionHorizontal = -1;
+                sr.flipX = true;
+            }
+            else if (vectorPosicionInicial.x + (-vectorPosicionInicial.x + transform.localPosition.x) < vectorPosicionInicial.x - distanciaDePatrullaje)
+            {
+                direccionHorizontal = 1;
+                sr.flipX = false;
+            }
+            //recuperandose
+            if (transform.position.y - alturaInicial > 0.075f || transform.position.y - alturaInicial < -0.075f)
+            {
+
                 Vector2 destino = Vector2.MoveTowards(transform.position, vectorPosicionInicial, velocidadDePatrullaje * Time.deltaTime);
                 transform.position = destino;
-                if(destino.x > transform.position.x)
+                if (destino.x > transform.position.x)
                 {
                     sr.flipX = false;
                 }
@@ -42,28 +65,6 @@ public class Buitre : MonoBehaviour
                     sr.flipX = true;
                 }
             }
-            else
-            {
-                //Patrullar
-                transform.Translate(Vector2.right * direccionHorizontal * velocidadDePatrullaje * Time.deltaTime);
-
-
-                if (posicionInicial + transform.position.x > posicionInicial + distanciaDePatrullaje)
-                {
-                    direccionHorizontal = -1;
-                    sr.flipX = true;
-                }
-                else if (posicionInicial + transform.position.x < posicionInicial - distanciaDePatrullaje)
-                {
-
-                    direccionHorizontal = 1;
-                    sr.flipX = false;
-                }
-            }
-            
-
-            
-            
 
         }
         else
@@ -85,7 +86,6 @@ public class Buitre : MonoBehaviour
     public bool Patrullando()
     {
 
-        target = GameObject.Find("Rectangle");
         if(target != null)
         {
             if (Vector2.Distance(transform.position, target.transform.position) < distanciaParaPerseguir)

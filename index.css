@@ -78,12 +78,12 @@ header .textos-header{
 }
 .imagen-logo-trama, .textohistoria{
     width: 48%;
+    padding: 0px 0px 30px 15px;
+    text-align:justify;
 }
 
 .textohistoria p{
-    padding: 0px 0px 30px 15px;
-    font-weight: 300;
-    text-align:justify;
+    font-weight: 250;
 }
 
 .Personajes{
@@ -113,6 +113,8 @@ header .textos-header{
     justify-content: space-evenly;
     padding: 0px 0px 30px 15px;
     width: 48%;
+    margin: auto;
+    overflow: hidden;
 }
 .Mapache p{
     padding: 0px 0px 30px 15px;
@@ -127,6 +129,8 @@ header .textos-header{
     justify-content: space-evenly;
     padding: 0px 0px 30px 15px;
     width: 48%;
+    margin: auto;
+    overflow: hidden;
 }
 .Buitre p{
     padding: 0px 0px 30px 15px;
@@ -141,6 +145,8 @@ header .textos-header{
     justify-content: space-evenly;
     padding: 0px 0px 30px 15px;
     width: 48%;
+    margin: auto;
+    overflow: hidden;
 }
 .JackMcManaman p{
     padding: 0px 0px 30px 15px;

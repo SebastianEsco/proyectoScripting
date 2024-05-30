@@ -77,13 +77,17 @@ header .textos-header{
     color:white;
 }
 .imagen-logo-trama, .textohistoria{
-    width: 48%;
     padding: 0px 0px 30px 15px;
     text-align:justify;
 }
 
+.imagen-logo-trama{
+    width: 60;
+}
+
 .textohistoria p{
     font-weight: 250;
+    width: 48%;
 }
 
 .Personajes{
@@ -91,11 +95,12 @@ header .textos-header{
 }
 .imagen-serpiente{
     width: 48%;
+    padding: 0px 50px 80px 0px;
 }
-.Personajes .Serpiente{
+.Personajes .SerpienteContenido{
     display: flex;
     justify-content: space-evenly;
-    padding: 0px 0px 30px 15px;
+    /*padding: 0px 0px 30px 15px;*/
     width: 48%;
     margin: auto;
     overflow: hidden;
@@ -107,11 +112,12 @@ header .textos-header{
 }
 .imagen-mapache{
     width: 48%;
+    padding: 0px 50px 80px 0px;
 }
-.Personajes .Mapache{
+.Personajes .MapacheContenido{
     display: flex;
     justify-content: space-evenly;
-    padding: 0px 0px 30px 15px;
+    /*padding: 0px 0px 30px 15px;*/
     width: 48%;
     margin: auto;
     overflow: hidden;
@@ -123,11 +129,12 @@ header .textos-header{
 }
 .imagen-buitre{
     width: 48%;
+    padding: 0px 50px 80px 0px;
 }
-.Personajes .Buitre{
+.Personajes .BuitreContenido{
     display: flex;
     justify-content: space-evenly;
-    padding: 0px 0px 30px 15px;
+    /*padding: 0px 0px 30px 15px;*/
     width: 48%;
     margin: auto;
     overflow: hidden;
@@ -139,11 +146,12 @@ header .textos-header{
 }
 .imagen-jack{
     width: 25%;
+    padding: 0px 50px 80px 0px;
 }
-.Personajes .JackMcManaman{
+.Personajes .JackMcManamanContenido{
     display: flex;
     justify-content: space-evenly;
-    padding: 0px 0px 30px 15px;
+    /*padding: 0px 0px 30px 15px;*/
     width: 48%;
     margin: auto;
     overflow: hidden;

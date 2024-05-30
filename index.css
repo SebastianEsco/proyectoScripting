@@ -21,3 +21,53 @@ body{
     margin-bottom: 60px;
 }
 
+header{
+    width: 100%;
+    height: 600px;
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    text-align: center;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color:aliceblue;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color:white;
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:white;
+}
+.parrafosHistoria{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-serpiente{
+    width: 48%;
+}
+.parrafosHistoria .textohistoria{
+    width: 48%;
+}

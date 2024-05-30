@@ -10,9 +10,9 @@ body{
 .parrafosHistoria{
     /*padding: 60px 0;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1000px;*/
     margin: auto;
-    overflow: hidden;*/
+    overflow: hidden;
     display: flex;
     justify-content: space-evenly;
 }
@@ -86,7 +86,7 @@ header .textos-header{
 .textohistoria p{
     padding: 0px 0px 30px 15px;
     font-weight: 300;
-    text-align: justify;
+    text-align:right;
 }
 .imagen-serpiente{
     width: 48%;

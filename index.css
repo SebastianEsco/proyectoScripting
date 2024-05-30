@@ -26,11 +26,11 @@ body{
 header{
     width: 100%;
     height: 600px;
-    background: #F2994A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(45, 86%, 62%, 0.834), #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: #F2994A;   fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right, hsla(45, 86%, 62%, 0.834), #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
     background-size: cover;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;*/
 }
 nav{
     text-align: center;
@@ -44,6 +44,11 @@ nav > a{
 }
 nav > a:hover{
     text-decoration: underline;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 header .textos-header{
     display: flex;
@@ -83,15 +88,13 @@ header .textos-header{
     font-weight: 300;
     text-align: justify;
 }
-.Personajes{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px 0px 30px 15px;
-}
 .imagen-serpiente{
     width: 48%;
 }
 .Personajes .Serpiente{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 0px 30px 15px;
     width: 48%;
 }
 .Serpiente p{
@@ -103,6 +106,9 @@ header .textos-header{
     width: 48%;
 }
 .Personajes .Mapache{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 0px 30px 15px;
     width: 48%;
 }
 .Mapache p{
@@ -114,6 +120,9 @@ header .textos-header{
     width: 48%;
 }
 .Personajes .Buitre{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 0px 30px 15px;
     width: 48%;
 }
 .Buitre p{
@@ -125,6 +134,9 @@ header .textos-header{
     width: 48%;
 }
 .Personajes .JackMcManaman{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 0px 30px 15px;
     width: 48%;
 }
 .JackMcManaman p{

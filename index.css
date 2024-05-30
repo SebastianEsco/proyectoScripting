@@ -7,7 +7,7 @@
 body{
     font-family: 'Weston';
 }
-.parrafosHistori{
+.parrafosHistoria{
     padding: 60px 0;
     width: 90%;
     max-width: 1000px;
@@ -54,10 +54,18 @@ header .textos-header{
 }
 .textos-header h1{
     font-size: 50px;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     color:white;
 }
 .textos-header h2{
     font-size: 30px;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     font-weight: 300;
     color:white;
 }
@@ -75,4 +83,8 @@ header .textos-header{
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
+}
+.Personajes{
+    display: flex;
+    justify-content: space-evenly;
 }

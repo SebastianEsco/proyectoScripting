@@ -8,11 +8,13 @@ body{
     font-family: 'Weston';
 }
 .parrafosHistoria{
-    padding: 60px 0;
+    /*padding: 60px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
-    overflow: hidden;
+    overflow: hidden;*/
+    display: flex;
+    justify-content: space-evenly;
 }
 .titulo{
     color:goldenrod;
@@ -28,7 +30,7 @@ header{
     background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, hsla(45, 86%, 62%, 0.834), #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 nav{
     text-align: center;
@@ -69,13 +71,10 @@ header .textos-header{
     font-weight: 300;
     color:white;
 }
-.parrafosHistoria{
-    display: flex;
-    justify-content: space-evenly;
-}
-.imagen-serpiente{
+.imagen-logo-trama{
     width: 48%;
 }
+
 .parrafosHistoria .textohistoria{
     width: 48%;
 }
@@ -87,4 +86,49 @@ header .textos-header{
 .Personajes{
     display: flex;
     justify-content: space-evenly;
+    padding: 0px 0px 30px 15px;
+}
+.imagen-serpiente{
+    width: 48%;
+}
+.Personajes .Serpiente{
+    width: 48%;
+}
+.Serpiente p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+.imagen-mapache{
+    width: 48%;
+}
+.Personajes .Mapache{
+    width: 48%;
+}
+.Mapache p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+.imagen-buitre{
+    width: 48%;
+}
+.Personajes .Buitre{
+    width: 48%;
+}
+.Buitre p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+.imagen-jack{
+    width: 48%;
+}
+.Personajes .JackMcManaman{
+    width: 48%;
+}
+.JackMcManaman p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
 }

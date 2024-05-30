@@ -77,17 +77,13 @@ header .textos-header{
     color:white;
 }
 .imagen-logo-trama, .textohistoria{
+    width: 48%;
     padding: 0px 0px 30px 15px;
     text-align:justify;
 }
 
-.imagen-logo-trama{
-    width: 60;
-}
-
 .textohistoria p{
-    font-weight: 250;
-    width: 48%;
+    font-weight: 250;    
 }
 
 .Personajes{

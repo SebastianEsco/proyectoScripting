@@ -10,7 +10,7 @@ body{
 .parrafosHistoria{
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
+    width: 48%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
@@ -85,6 +85,10 @@ header .textos-header{
     font-weight: 300;
     text-align:justify;
 }
+
+.Personajes{
+    align-items:center;
+}
 .imagen-serpiente{
     width: 48%;
 }
@@ -93,6 +97,8 @@ header .textos-header{
     justify-content: space-evenly;
     padding: 0px 0px 30px 15px;
     width: 48%;
+    margin: auto;
+    overflow: hidden;
 }
 .Serpiente p{
     padding: 0px 0px 30px 15px;

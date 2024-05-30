@@ -8,13 +8,13 @@ body{
     font-family: 'Weston';
 }
 .parrafosHistoria{
-    /*padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;*/
-    margin: auto;
-    overflow: hidden;
     display: flex;
     justify-content: space-evenly;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    
 }
 .titulo{
     color:goldenrod;
@@ -76,17 +76,14 @@ header .textos-header{
     font-weight: 300;
     color:white;
 }
-.imagen-logo-trama{
+.imagen-logo-trama, .textohistoria{
     width: 48%;
 }
 
-.parrafosHistoria .textohistoria{
-    width: 48%;
-}
 .textohistoria p{
     padding: 0px 0px 30px 15px;
     font-weight: 300;
-    text-align:right;
+    text-align:justify;
 }
 .imagen-serpiente{
     width: 48%;
@@ -131,7 +128,7 @@ header .textos-header{
     text-align: justify;
 }
 .imagen-jack{
-    width: 48%;
+    width: 25%;
 }
 .Personajes .JackMcManaman{
     display: flex;

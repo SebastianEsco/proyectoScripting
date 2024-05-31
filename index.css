@@ -11,7 +11,7 @@ body{
 .parrafosHistoria{
     display: flex;
     justify-content: space-evenly;
-    width: 60%;
+    width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
@@ -74,7 +74,7 @@ header .textos-header{
     flex-direction: column;
     text-align: center;
 }
-.textos-header h1{
+.textos-header {
     font-size: 50px;
     align-items:center;
     justify-content: center;
@@ -174,4 +174,10 @@ header .textos-header{
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
+}
+.historia h2{
+    font-size: xx-large;
+}
+.Personajes h2{
+    font-size: xx-large;
 }

@@ -16,16 +16,23 @@ public class Boss : MonoBehaviour
     public bool activarIdle;
     Health vida;
 
+    bool estadoValido;
+
     Animator animator;
     bool animacionMuerte;
     public bool curacionEnCoolDown;
     public float tiempoCooldownCuracion;
+
+    int ultimoEstado;
+    Health vidaScript;
 
     GameObject circuloExplosion;
     float exponencial = 1;
 
     public float delayGolpeSuelo, timerDelayGolpeSuelo;
     public GameObject onda1, onda2;
+
+    float timerCambiosDeEstado;
 
 
     [MMInspectorButton("ActivarEstadoBoton")] public bool ProbarEstado;
@@ -66,8 +73,21 @@ public class Boss : MonoBehaviour
 
         target = GameObject.Find("Rectangle");
 
-        int randomEstado = Random.Range(0, listaEstados.Count - 1);
-        float randomTiempo = Random.Range(7, 10);
+        if (timerCambiosDeEstado <= 0)
+        {
+            float randomTiempo = Random.Range(7, 10);
+            timerCambiosDeEstado = randomTiempo;
+            print("Supuesto  Cambio de estado");
+            CambioAcutomaticoDeEstado();
+
+
+        }
+        else
+        {
+            timerCambiosDeEstado -= Time.deltaTime;
+        }
+
+       
         
 
 
@@ -77,8 +97,30 @@ public class Boss : MonoBehaviour
         GolpeAlSuelo();
         if (gameObject.GetComponent<Health>().CurrentHealth <= 0)
         {
+            ActivarEstado("Tieso");
             Tieso();
         }
+        
+    }
+
+    public void CambioAcutomaticoDeEstado()
+    {
+        estadoValido = false;
+        int randomEstado = 0;
+        while (!estadoValido)
+        {
+            randomEstado = Random.Range(0, listaEstados.Count);
+            if(randomEstado == 1 || randomEstado == ultimoEstado)
+            {
+                estadoValido = false;
+            }
+            else
+            {
+                estadoValido = true;
+            }
+        }
+        ultimoEstado = randomEstado;
+        ActivarEstado(listaEstados[randomEstado].nombre);
         
     }
 
@@ -148,6 +190,8 @@ public class Boss : MonoBehaviour
     {
         if (curacion.estado && !curacionEnCoolDown)
         {
+
+            GetComponent<Health>().Invulnerable = true;
             animator.Play("CuracionBoss");
             animator.SetBool("Curandose", true);
             curacionEnCoolDown = true;
@@ -167,6 +211,10 @@ public class Boss : MonoBehaviour
                     Quaternion.identity);
             }
         }
+        else
+        {
+            GetComponent<Health>().Invulnerable = false;
+        }
     }
     public void CooldownCuracion()
     {
@@ -181,7 +229,7 @@ public class Boss : MonoBehaviour
             animator.SetBool("Curandose", false);
             if(circuloExplosion.transform.localScale.x < 1.75)
             {
-                exponencial *= 1.02f;
+                exponencial *= 1.015f;
                 circuloExplosion.transform.localScale += Vector3.one * exponencial * Time.deltaTime * Time.deltaTime;
             }
         }

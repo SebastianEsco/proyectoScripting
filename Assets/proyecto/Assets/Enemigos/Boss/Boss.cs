@@ -21,6 +21,12 @@ public class Boss : MonoBehaviour
     public bool curacionEnCoolDown;
     public float tiempoCooldownCuracion;
 
+    GameObject circuloExplosion;
+    float exponencial = 1;
+
+    public float delayGolpeSuelo, timerDelayGolpeSuelo;
+    public GameObject onda1, onda2;
+
 
     [MMInspectorButton("ActivarEstadoBoton")] public bool ProbarEstado;
     public string estadoParaBoton;
@@ -30,6 +36,8 @@ public class Boss : MonoBehaviour
     Estado idle = new Estado("Idle", false);
     Estado tieso = new Estado("Tieso", false);
     Estado curacion = new Estado("Curando", false);
+    Estado explotar = new Estado("Explotar", false);
+    Estado golpeAlSuelo = new Estado("GolpearSuelo", false);
 
    
     private void Awake()
@@ -39,13 +47,18 @@ public class Boss : MonoBehaviour
     }
     private void Start()
     {
+        vectorPosicionInicial = new Vector2(posicionInicial, alturaInicial);
+        circuloExplosion = GameObject.Find("Explotar");
         direccionHorizontal = 1;
         sr = GetComponent<SpriteRenderer>();
         listaEstados.Add(idle);
         listaEstados.Add(tieso);
         listaEstados.Add(curacion);
+        listaEstados.Add(explotar);
+        listaEstados.Add(golpeAlSuelo);
         animator = GetComponent<Animator>();
         vida = GetComponent<Health>();
+
     }
 
     private void Update()
@@ -53,9 +66,19 @@ public class Boss : MonoBehaviour
 
         target = GameObject.Find("Rectangle");
 
+        int randomEstado = Random.Range(0, listaEstados.Count - 1);
+        float randomTiempo = Random.Range(7, 10);
+        
+
+
         Idle();
-        Tieso();
         Curacion();
+        Explotar();
+        GolpeAlSuelo();
+        if (gameObject.GetComponent<Health>().CurrentHealth <= 0)
+        {
+            Tieso();
+        }
         
     }
 
@@ -78,7 +101,7 @@ public class Boss : MonoBehaviour
     {
         if (tieso.estado)
         {
-            if(transform.localPosition.y > 3.5f)
+            if(transform.localPosition.y > -2.5f)
             {
                 transform.Translate(Vector2.down * 5 * Time.deltaTime);
             }
@@ -96,6 +119,7 @@ public class Boss : MonoBehaviour
         vectorPosicionInicial = new Vector2(posicionInicial, alturaInicial);
         if (idle.estado)
         {
+            animator.SetBool("Curandose", false);
 
             print("En IDDLE");
             if (distanciaDeIdle != 0)
@@ -124,6 +148,8 @@ public class Boss : MonoBehaviour
     {
         if (curacion.estado && !curacionEnCoolDown)
         {
+            animator.Play("CuracionBoss");
+            animator.SetBool("Curandose", true);
             curacionEnCoolDown = true;
             Invoke("CooldownCuracion", tiempoCooldownCuracion);
             for (int i = 0; i < (10 - (vida.CurrentHealth/10)); i++)
@@ -146,6 +172,81 @@ public class Boss : MonoBehaviour
     {
         curacionEnCoolDown = false;
     }
+
+    public void Explotar()
+    {
+        if (explotar.estado)
+        {
+            animator.SetBool("Explotando", true);
+            animator.SetBool("Curandose", false);
+            if(circuloExplosion.transform.localScale.x < 1.75)
+            {
+                exponencial *= 1.02f;
+                circuloExplosion.transform.localScale += Vector3.one * exponencial * Time.deltaTime * Time.deltaTime;
+            }
+        }
+        else
+        {
+            animator.SetBool("Explotando", false);
+            if (circuloExplosion.transform.localScale.x > 0.1)
+            {
+                exponencial = 1;
+                circuloExplosion.transform.localScale -= Vector3.one * 60 * Time.deltaTime * Time.deltaTime;
+            }
+        }
+    }
+
+    public void GolpeAlSuelo()
+    {
+        if (golpeAlSuelo.estado)
+        {
+
+            onda1.GetComponent<OndaDañoSuelo>().reiniciar = false;
+            onda2.GetComponent<OndaDañoSuelo>().reiniciar = false;
+            if (timerDelayGolpeSuelo > 0)
+            {
+                timerDelayGolpeSuelo -= Time.deltaTime;
+                if (transform.localPosition.y > -2.5f)
+                {
+                    transform.Translate(Vector2.down * 5 * Time.deltaTime); //Bajar al suelo
+                }
+                
+            }
+            else
+            {
+                
+                onda1.GetComponent<OndaDañoSuelo>().activado = true;
+                onda2.GetComponent<OndaDañoSuelo>().activado = true;
+
+
+            }
+            if(timerDelayGolpeSuelo < 1.25f)
+            {
+                //PLAY ANIMACION
+                animator.Play("GolpearSueloBoss");
+                animator.SetBool("GolpeandoSuelo", true);
+            }
+
+           
+
+            
+        }
+        else
+        {
+            timerDelayGolpeSuelo = delayGolpeSuelo;
+            animator.SetBool("GolpeandoSuelo", false);
+            if (transform.position.y < alturaInicial)
+            {
+                transform.Translate(Vector2.up * 3 * Time.deltaTime);
+            }
+            onda1.GetComponent<OndaDañoSuelo>().activado = false;
+            onda2.GetComponent<OndaDañoSuelo>().activado = false;
+            onda1.GetComponent<OndaDañoSuelo>().reiniciar = true;
+            onda2.GetComponent<OndaDañoSuelo>().reiniciar = true;
+        }
+    }
+    
+    
 
     public class Estado
     {

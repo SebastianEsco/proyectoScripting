@@ -91,7 +91,6 @@ public class Buitre : MonoBehaviour
             if (Vector2.Distance(transform.position, target.transform.position) < distanciaParaPerseguir)
             {
 
-                Debug.Log("A Distancia para perseguir");
                 return false;
             }
             else

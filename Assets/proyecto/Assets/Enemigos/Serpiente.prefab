@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2155902761820694597}
   - component: {fileID: 8239416363571324968}
-  - component: {fileID: 6772531748634254017}
+  - component: {fileID: 5789175161996468617}
   - component: {fileID: 8406216244330968441}
   - component: {fileID: 7448129583320984604}
   - component: {fileID: 6196566137288231721}
@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 4252429427951651342}
   - component: {fileID: 79980193087926795}
   - component: {fileID: 3289095652162398995}
+  - component: {fileID: 6590873231516132575}
   m_Layer: 13
   m_Name: Serpiente
   m_TagString: Enemigo
@@ -40,8 +41,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.32, y: -1.159, z: 0}
-  m_LocalScale: {x: 0.38408002, y: 0.38408002, z: 0.38408002}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.100825004, y: 0.100825004, z: 0.100825004}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -86,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 49cad590c6f7896478fddd3ad6c41964, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1a512fe988c70149bda7ce5f89d1ba6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,33 +98,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6772531748634254017
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!95 &5789175161996468617
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4967697058589973447}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bcb83f5f4bc6c8f4a8497168df6dd618, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &8406216244330968441
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -153,21 +148,21 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.72268975}
+  m_Offset: {x: 0.6268029, y: -3.4026494}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.89, y: 5.47}
+    oldSize: {x: 24.802656, y: 35.079998}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.01, y: 3.4229991}
+  m_Size: {x: 9.938449, y: 8.575144}
   m_EdgeRadius: 0
 --- !u!114 &7448129583320984604
 MonoBehaviour:
@@ -387,7 +382,7 @@ MonoBehaviour:
   PlayerID: 
   InitialFacingDirection: 0
   DirectionOnSpawn: 0
-  CharacterAnimator: {fileID: 0}
+  CharacterAnimator: {fileID: 5789175161996468617}
   UseDefaultMecanim: 1
   PerformAnimatorSanityChecks: 1
   DisableAnimatorLogs: 0
@@ -555,3 +550,19 @@ MonoBehaviour:
   TargetLayer:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &6590873231516132575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4967697058589973447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a418d648eac16f44ab6c89ed0abf29c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadDePatrullaje: 20
+  distanciaDePatrullaje: 5
+  distanciaParaPerseguir: 1
+  target: {fileID: 0}

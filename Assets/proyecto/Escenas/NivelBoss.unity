@@ -4810,6 +4810,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -16.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5927722604174228408, guid: fd47ded3dc43e5a498e0003258368490,
+        type: 3}
+      propertyPath: direccion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6539657024328752344, guid: fd47ded3dc43e5a498e0003258368490,
         type: 3}
       propertyPath: DestroyOnDeath

@@ -178,7 +178,6 @@ GameObject:
   - component: {fileID: 2649704616636730493}
   - component: {fileID: 1431235170801678928}
   - component: {fileID: 55099783795724087}
-  - component: {fileID: 6149389617411791558}
   - component: {fileID: 3248423720961141579}
   - component: {fileID: 2506036324190690422}
   m_Layer: 13
@@ -344,8 +343,8 @@ MonoBehaviour:
   CurrentHealth: 0
   TemporarilyInvulnerable: 0
   PostDamageInvulnerable: 0
-  InitialHealth: 10
-  MaximumHealth: 10
+  InitialHealth: 20
+  MaximumHealth: 20
   Invulnerable: 0
   ImmuneToDamage: 0
   DamageFeedbacks: {fileID: 7476333544027074925}
@@ -431,41 +430,6 @@ MonoBehaviour:
   RaycastLength: 0.5
   RaycastVerticalOffset: 0.01
   StomperMustBeAlive: 1
---- !u!114 &6149389617411791558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3774939247209323812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b470d1b161b2454590386135b7fd64f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharacterType: 1
-  PlayerID: 
-  InitialFacingDirection: 0
-  DirectionOnSpawn: 0
-  CharacterAnimator: {fileID: 0}
-  UseDefaultMecanim: 1
-  PerformAnimatorSanityChecks: 1
-  DisableAnimatorLogs: 0
-  CharacterModel: {fileID: 0}
-  CameraTarget: {fileID: 0}
-  CameraTargetSpeed: 5
-  AdditionalAbilityNodes: []
-  FlipModelOnDirectionChange: 1
-  ModelFlipValue: {x: -1, y: 1, z: 1}
-  RotateModelOnDirectionChange: 0
-  ModelRotationValue: {x: 0, y: 180, z: 0}
-  ModelRotationSpeed: 0
-  CharacterHealth: {fileID: 0}
-  SendStateChangeEvents: 1
-  SendStateUpdateEvents: 1
-  AirborneDistance: 0.5
-  AirborneMinimumTime: 0.1
-  CharacterBrain: {fileID: 0}
 --- !u!114 &3248423720961141579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,8 +464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadDePatrullaje: 4
-  distanciaDePatrullaje: 5
-  distanciaParaPerseguir: 5
+  distanciaDePatrullaje: 6
+  distanciaParaPerseguir: 7
   target: {fileID: 0}
 --- !u!1 &7620571728744814300
 GameObject:

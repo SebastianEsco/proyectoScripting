@@ -28962,6 +28962,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MinimalCameraRig
       objectReference: {fileID: 0}
+    - target: {fileID: 8040196612442320774, guid: 67e9e6648638ca94eaaa9e41373f42f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7811508
+      objectReference: {fileID: 0}
     - target: {fileID: 8940356102819974359, guid: 67e9e6648638ca94eaaa9e41373f42f2,
         type: 3}
       propertyPath: m_LocalPosition.x

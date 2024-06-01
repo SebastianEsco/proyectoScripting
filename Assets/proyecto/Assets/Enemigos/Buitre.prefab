@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 55099783795724087}
   - component: {fileID: 3248423720961141579}
   - component: {fileID: 2506036324190690422}
+  - component: {fileID: 1141846590581127019}
   m_Layer: 13
   m_Name: Buitre
   m_TagString: Enemigo
@@ -197,7 +198,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.61, y: 5.1, z: 0}
-  m_LocalScale: {x: 0.30260512, y: 0.30260512, z: 0.30260512}
+  m_LocalScale: {x: 0.13142443, y: 0.13142443, z: 0.13142443}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 482516913365740831}
@@ -467,6 +468,27 @@ MonoBehaviour:
   distanciaDePatrullaje: 6
   distanciaParaPerseguir: 7
   target: {fileID: 0}
+--- !u!95 &1141846590581127019
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3774939247209323812}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aca89957980c28b4388d472ef16bd299, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7620571728744814300
 GameObject:
   m_ObjectHideFlags: 0

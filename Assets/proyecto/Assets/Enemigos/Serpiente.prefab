@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2155902761820694597}
   - component: {fileID: 8239416363571324968}
-  - component: {fileID: 5789175161996468617}
   - component: {fileID: 8406216244330968441}
   - component: {fileID: 7448129583320984604}
   - component: {fileID: 6196566137288231721}
@@ -87,38 +86,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f1a512fe988c70149bda7ce5f89d1ba6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2395a9a991627e343b7be848e909ac17, type: 3}
+  m_Color: {r: 1, g: 0.832444, b: 0.514151, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 24.802656, y: 35.079998}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5789175161996468617
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4967697058589973447}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bcb83f5f4bc6c8f4a8497168df6dd618, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &8406216244330968441
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,7 +134,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 24.802656, y: 35.079998}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 24.802656, y: 35.079998}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -382,7 +360,7 @@ MonoBehaviour:
   PlayerID: 
   InitialFacingDirection: 0
   DirectionOnSpawn: 0
-  CharacterAnimator: {fileID: 5789175161996468617}
+  CharacterAnimator: {fileID: 0}
   UseDefaultMecanim: 1
   PerformAnimatorSanityChecks: 1
   DisableAnimatorLogs: 0

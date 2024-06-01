@@ -242,15 +242,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/proyecto/Escenas/Nivel3.unity
     guid: b9423f4fce7876f448e13d3788a9fec2
-  - enabled: 0
-    path: Assets/proyecto/Escenas/NivelBoss1.unity
-    guid: d256ca84cdd00944da4a8bf002bb9c8e
   - enabled: 1
     path: Assets/proyecto/Escenas/Perdio.unity
     guid: f837029075e255d4f9362c34074dfebb
   - enabled: 1
     path: Assets/proyecto/Escenas/NivelBoss.unity
-    guid: 8853a3711cd00e746b7b6103e3cc7a5a
+    guid: bb0e5eb00e5b7b849bc5d2c7daeb5662
   - enabled: 1
     path: Assets/proyecto/Escenas/Logros.unity
     guid: bbf20c48c1433d34cb4bcf8c52569e36

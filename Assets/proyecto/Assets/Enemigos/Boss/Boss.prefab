@@ -496,8 +496,8 @@ MonoBehaviour:
   activarIdle: 0
   curacionEnCoolDown: 0
   tiempoCooldownCuracion: 10
-  delayGolpeSuelo: 0
-  timerDelayGolpeSuelo: 0
+  delayGolpeSuelo: 2.5
+  timerDelayGolpeSuelo: 1.75
   onda1: {fileID: 7538125043187289567}
   onda2: {fileID: 1086305222745538322}
   ProbarEstado: 0
@@ -711,7 +711,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.02, y: 0.001, z: 0}
-  m_LocalScale: {x: 0.9659977, y: 0.9659977, z: 0.9659977}
+  m_LocalScale: {x: 0.12924083, y: 0.12924083, z: 0.12924083}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9134418226653986007}
@@ -737,7 +737,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a1a494236fc81314c8aa9585a019ccdc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

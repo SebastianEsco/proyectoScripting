@@ -20,7 +20,6 @@ body{
 }
 .titulo{
     color:goldenrod;
-    padding: 100px 0 0 0;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -47,6 +46,19 @@ body{
     height: 100%;
     object-fit: fill;
     position: absolute;
+}
+nav{
+    text-align: center;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color:aliceblue;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
 }
 .wave{
     position: absolute;
@@ -88,8 +100,7 @@ header .textos-header{
 }
 
 .textohistoria p{
-    font-weight: 250; 
-    color: #0A0802;   
+    font-weight: 250;    
 }
 
 .Personajes{
@@ -97,122 +108,76 @@ header .textos-header{
 }
 .imagen-serpiente{
     width: 48%;
-    padding: 40px 50px 80px 20px;
+    padding: 0px 50px 80px 0px;
 }
 .Personajes .SerpienteContenido{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 48%;
     margin: auto;
     overflow: hidden;
-    background: #FFBD59;
 }
 .Serpiente p{
-    padding: 0px 30px 30px 15px;
+    padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
     align-items: center;
-    color: #0A0802;
 }
 .imagen-mapache{
     width: 48%;
-    padding: 40px 50px 80px 20px;
+    padding: 0px 50px 80px 0px;
 }
 .Personajes .MapacheContenido{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 48%;
     margin: auto;
     overflow: hidden;
-    background: #EBA450;
 }
 .Mapache p{
-    padding: 0px 30px 30px 15px;
+    padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
-    color: #0A0802;
 }
 .imagen-buitre{
     width: 48%;
-    padding: 40px 50px 80px 20px;
+    padding: 0px 50px 80px 0px;
 }
 .Personajes .BuitreContenido{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 48%;
     margin: auto;
     overflow: hidden;
-    background: #DF8E43;
 }
 .Buitre p{
-    padding: 0px 50px 30px 15px;
+    padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
-    color: #0A0802;
 }
 .imagen-jack{
     width: 25%;
-    padding: 40px 50px 80px 20px;
+    padding: 0px 50px 80px 0px;
 }
 .Personajes .JackMcManamanContenido{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 48%;
     margin: auto;
     overflow: hidden;
-    background: #D18138;
 }
 .JackMcManaman p{
-    padding: 0px 20px 30px 15px;
-    font-weight: 300;
-    text-align: justify;
-    color: #0A0802;
-}
-.imagen-Boss{
-    width: 48%;
-    padding: 40px 50px 80px 20px;
-}
-.Personajes .BossContenido{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    background-color: #423727;
-}
-.Boss p{
     padding: 0px 0px 30px 15px;
     font-weight: 300;
-    text-align: justify;  
+    text-align: justify;
 }
 .historia h2{
     font-size: xx-large;
 }
 .Personajes h2{
     font-size: xx-large;
-}
-.QuienesSomosContenido {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    text-align:justify;
-    align-items: center;
-    font-size: medium;
-    object-fit:  contain; 
-    flex-direction: column;
-    padding: 50px 30px 0 30px;
-    background-color: #686868;
-}
-.imagen-Aguapanela{
-    width: 20%;
-    padding: 40px 50px 80px 20px;
-}
-.QuienesSomosContenido p{
-    font-weight: 250; 
-    color: #e4e4bc;   
 }

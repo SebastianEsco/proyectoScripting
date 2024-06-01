@@ -227,7 +227,7 @@ public class Boss : MonoBehaviour
         {
             animator.SetBool("Explotando", true);
             animator.SetBool("Curandose", false);
-            if(circuloExplosion.transform.localScale.x < 1.55)
+            if(circuloExplosion.transform.localScale.x < 1.25)
             {
                 exponencial *= 1.009f;
                 circuloExplosion.transform.localScale += Vector3.one * exponencial * Time.deltaTime * Time.deltaTime;

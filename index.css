@@ -216,3 +216,8 @@ header .textos-header{
     font-weight: 250; 
     color: #e4e4bc;   
 }
+.Descarga{
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
